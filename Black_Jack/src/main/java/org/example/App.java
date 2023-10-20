@@ -34,11 +34,15 @@ public class App
         {
             System.out.println("BUST both Players above 21");
         }
-        else if (Number1 > Number2 && Number1 < 21 || Number1 < 21 && Number2 > 21)
+        else if (Number1 == Number2)
+        {
+            System.out.println("Both players tied");
+        }
+        else if (Number1 > Number2 && Number1 <= 21 || Number1 < 21 && Number2 > 21)
         {
             System.out.println("Player 1 " + Player1 + " Wins");
         }
-        else if (Number2 > Number1 && Number2 < 21 || Number2 < 21 && Number1 > 21)
+        else if (Number2 > Number1 && Number2 <= 21 || Number2 < 21 && Number1 > 21)
         {
             System.out.println("Player  " + Player2 + " Wins");
         }
